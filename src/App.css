@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
 }
 
 .App-logo {
@@ -34,5 +34,92 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.display_flex {
+  display: flex;
+}
+
+.justify_content_end {
+  justify-content: end;
+}
+
+.justify_content_start {
+  justify-content: start;
+}
+
+.grid_gap_8 {
+  grid-gap: 8px;
+}
+
+.padding_t_8 {
+  padding-top: 8px;
+}
+
+.inputBoxWrapper {
+  background-color: #e8e8e8;
+  font-family: sans-serif;
+  padding: 40px;
+
+  .textareaWrapper {
+    position: relative;
+    width: fit-content;
+  }
+  
+  textarea {
+    resize: none;
+    border: none;
+    border-radius: 8px;
+    padding: 16px;
+  }
+  
+  textarea:focus-visible, input:focus-visible {
+    outline: none;
+  }
+
+  .promptBox {
+    border: 2px solid pink;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px pink;
+    background-color: #fdf0f2;
+    padding: 16px;
+    position: absolute;
+    width: 275px;
+
+    input {
+      border: none;
+      width: 100%;
+      background-color: transparent;
+      border-bottom: 1px solid pink;
+      padding-bottom: 8px;
+      font-size: 12px;
+    }
+
+    .optionsBox {
+      background-color: white;
+      border-radius: 4px;
+      font-size: 12px;
+      cursor: pointer;
+      padding: 4px;
+      margin: 8px 0;
+    }
+
+    .loadingState {
+      font-size: 12px;
+      color: deeppink;
+      font-style: italic;
+      font-weight: 600;
+    }
+
+    .selected {
+      background-color: lightblue;
+      color: white;
+    }
+  }
+
+  .countText {
+    font-size: 12px;
+    color: grey;
   }
 }
